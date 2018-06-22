@@ -4,9 +4,9 @@ def oxford_comma(array)
   elsif(array.size ==2)
     return array.join(" and ")
   elsif(array.size >=3)
-    lastElement = array.pop
+   lastElement = array.pop
     newStr = array.join(", ")
-    newStr << "and " << lastElement
+    newStr << ", " << "and " << lastElement
     return newStr
 end
 end
